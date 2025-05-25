@@ -67,23 +67,23 @@ function App() {
           <div className='text-white text-5xl font-semibold'>Current Technologies</div>
           <div className='text-white/60 max-w-3xl text-base'>I'm proficient in a range of modern technologies that empower me to build highly functional solutions. These are some of my main technologies.</div>
           <div className='grid grid-cols-4 gap-4 py-4'>
-            <Tech Title='TypeScript' Description='JavaScript but better' ImagePath='./techstack/typescript.svg' backgroundColor='1a406c' />
-            <Tech Title='Node JS' Description='JavaScript but better' ImagePath='./techstack/nodejs.svg' backgroundColor='315e2f' />
-            <Tech Title='Express Js' Description='JavaScript but better' ImagePath='./techstack/expressjs.svg' backgroundColor='4c4c4c' />
-            <Tech Title='React JS' Description='JavaScript but better' ImagePath='./techstack/react.svg' backgroundColor='193b44' />
-            <Tech Title='Next JS' Description='JavaScript but better' ImagePath='./techstack/nextjs.svg' backgroundColor='656565' />
-            <Tech Title='Svelte' Description='JavaScript but better' ImagePath='./techstack/svelte.svg' backgroundColor='bf5827' />
-            <Tech Title='Nest JS' Description='JavaScript but better' ImagePath='./techstack/nestjs.svg' backgroundColor='693248' />
-            <Tech Title='Git' Description='JavaScript but better' ImagePath='./techstack/git.svg' backgroundColor='4e2e27' />
-            <Tech Title='Mongo DB' Description='JavaScript but better' ImagePath='./techstack/mongodb.svg' backgroundColor='36482b' />
-            <Tech Title='Prisma ORM' Description='JavaScript but better' ImagePath='./techstack/prisma.svg' backgroundColor='186997' />
-            <Tech Title='PostgreSQL' Description='JavaScript but better' ImagePath='./techstack/postgres.svg' backgroundColor='1a406c' />
-            <Tech Title='TailwindCSS' Description='JavaScript but better' ImagePath='./techstack/tailwind.svg' backgroundColor='266066' />
-            <Tech Title='Flutter' Description='JavaScript but better' ImagePath='./techstack/flutter.svg' backgroundColor='1a406c' />
-            <Tech Title='Dart' Description='JavaScript but better' ImagePath='./techstack/dart.svg' backgroundColor='005680' />
-            <Tech Title='Python' Description='JavaScript but better' ImagePath='./techstack/python.svg' backgroundColor='1b5381' />
-            <Tech Title='C++' Description='JavaScript but better' ImagePath='./techstack/cpp.svg' backgroundColor='1a406c' />
-            <Tech Title='Docker' Description='JavaScript but better' ImagePath='./techstack/docker.svg' backgroundColor='1a406c' />
+            <Tech Title='TypeScript' Description='Type-safe JavaScript' ImagePath='./techstack/typescript.svg' backgroundColor='1a406c' />
+            <Tech Title='Node JS' Description='JavaScript runtime' ImagePath='./techstack/nodejs.svg' backgroundColor='315e2f' />
+            <Tech Title='Express Js' Description='Web framework for Node.js' ImagePath='./techstack/expressjs.svg' backgroundColor='4c4c4c' />
+            <Tech Title='React JS' Description='UI component library' ImagePath='./techstack/react.svg' backgroundColor='193b44' />
+            <Tech Title='Next JS' Description='React framework for SSR' ImagePath='./techstack/nextjs.svg' backgroundColor='656565' />
+            <Tech Title='Svelte' Description='Compiled frontend framework' ImagePath='./techstack/svelte.svg' backgroundColor='bf5827' />
+            <Tech Title='Nest JS' Description='Progressive Node.js framework' ImagePath='./techstack/nestjs.svg' backgroundColor='693248' />
+            <Tech Title='Git' Description='Version control system' ImagePath='./techstack/git.svg' backgroundColor='4e2e27' />
+            <Tech Title='Mongo DB' Description='NoSQL document database' ImagePath='./techstack/mongodb.svg' backgroundColor='36482b' />
+            <Tech Title='Prisma ORM' Description='Next-gen database toolkit' ImagePath='./techstack/prisma.svg' backgroundColor='186997' />
+            <Tech Title='PostgreSQL' Description='Relational database' ImagePath='./techstack/postgres.svg' backgroundColor='1a406c' />
+            <Tech Title='TailwindCSS' Description='Utility-first CSS framework' ImagePath='./techstack/tailwind.svg' backgroundColor='266066' />
+            <Tech Title='Flutter' Description='Cross-platform UI toolkit' ImagePath='./techstack/flutter.svg' backgroundColor='1a406c' />
+            <Tech Title='Dart' Description='Client-optimized language' ImagePath='./techstack/dart.svg' backgroundColor='005680' />
+            <Tech Title='Python' Description='General-purpose language' ImagePath='./techstack/python.svg' backgroundColor='1b5381' />
+            <Tech Title='C++' Description='High-performance language' ImagePath='./techstack/cpp.svg' backgroundColor='1a406c' />
+            <Tech Title='Docker' Description='Container platform' ImagePath='./techstack/docker.svg' backgroundColor='1a406c' />
           </div>
         </div>
         <div className="h-full w-full rounded-md bg-neutral-950 relative flex flex-col antialiased border-2 border-white/10 my-10">
