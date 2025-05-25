@@ -1,2 +1,2 @@
 # portfolio
-a fucking portfolio
+a portfolio
