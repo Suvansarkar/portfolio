@@ -3,6 +3,7 @@ import './App.css';
 import Tech from './components/Tech';
 import { BackgroundBeams } from './components/Beams';
 import { useEffect, useState } from 'react';
+import { delay, motion } from 'framer-motion';
 
 function App() {
   const [isMobileView, setIsMobileView] = useState(false);
@@ -41,10 +42,18 @@ function App() {
       <div className='max-w-7xl mx-auto '>
         <div className="w-full flex flex-col items-center min-h-screen justify-center">
           <div className="flex items-center justify-center flex-col gap-6 w-[800px]">
-            <div className="text-gray-300 font-semibold">BASED IN BANGALORE</div>
-            <h1 className="text-7xl text-white font-bold text-center">Innovation In Every <span className='text-[#3b82f6]'>Pixel & Pipeline.</span></h1>
-            <div className="text-gray-300 text-center pb-6">Hi, I'm Suvan Sarkar — I architect scalable and efficient web applications with seamless backend logic and clean, intuitive user experiences.</div>
-            <div className='flex items-center justify-center gap-12'>
+            <motion.div initial={{ y: "-100px", opacity: 0, filter: "blur(10px)" }} animate={{ y: "0", opacity: 1, filter: "blur(0px)" }} transition={{ duration: "0.5", ease: "backOut" }} className="text-gray-300 font-semibold">BASED IN BANGALORE</motion.div>
+            <h1 className="text-7xl text-white font-bold text-center" >
+              <motion.span initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 0, ease: "easeInOut" }}>Innovation </motion.span>
+              <motion.span initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 0.25, ease: "easeInOut" }}>In </motion.span>
+              <motion.span initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 0.5, ease: "easeInOut" }}>Every </motion.span>
+              <motion.span className='text-[#3b82f6]' initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 0.75, ease: "easeInOut" }}>Pixel </motion.span>
+              <motion.span className='text-[#3b82f6]' initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 1, ease: "easeInOut" }}>& </motion.span>
+              <motion.span className='text-[#3b82f6]' initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 1.25, ease: "easeInOut" }}>Pipeline</motion.span>
+              <motion.span initial={{ filter: "blur(20px)", opacity: 0 }} animate={{ filter: "blur(0px)", opacity: 1 }} transition={{ delay: 1.25, ease: "easeInOut" }}>.</motion.span>
+            </h1>
+            <motion.div initial={{ y: "50px", opacity: 0, filter: "blur(10px)" }} animate={{ y: "0", opacity: 1, filter: "blur(0px)" }} transition={{ duration: "0.5", ease: "backOut" }} className="text-gray-300 text-center pb-6">Hi, I'm Suvan Sarkar — I architect scalable and efficient web applications with seamless backend logic and clean, intuitive user experiences.</motion.div>
+            <motion.div initial={{ y: "50px", opacity: 0, filter: "blur(10px)" }} animate={{ y: "0", opacity: 1, filter: "blur(0px)" }} transition={{ duration: "0.5", ease: "backOut" }} className='flex items-center justify-center gap-12'>
               <div className="container_button">
                 <a href="https://github.com/Suvansarkar" className="button type--B">
                   <div className="button__line"></div>
@@ -60,13 +69,50 @@ function App() {
                   <span className='text-nowrap'> Download CV</span>
                 </div>
               </a>
-            </div>
+            </motion.div>
           </div>
         </div>
         <div className="w-full py-20 flex flex-col gap-4">
-          <div className='text-white text-5xl font-semibold'>Current Technologies</div>
-          <div className='text-white/60 max-w-3xl text-base'>I'm proficient in a range of modern technologies that empower me to build highly functional solutions. These are some of my main technologies.</div>
-          <div className='grid grid-cols-4 gap-4 py-4'>
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: "-100px",
+              filter: "blur(10px)"
+            }}
+            whileInView={{
+              opacity: 1,
+              x: "0",
+              filter: "blur(0px)"
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className='text-white text-5xl font-semibold'>Current Technologies</motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              x: "-100px",
+              filter: "blur(10px)"
+            }}
+            whileInView={{
+              opacity: 1,
+              x: "0",
+              filter: "blur(0px)"
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className='text-white/60 max-w-3xl text-base'>I'm proficient in a range of modern technologies that empower me to build highly functional solutions. These are some of my main technologies.</motion.div>
+          <motion.div
+            initial={{
+              opacity: 0,
+              y: "100px",
+            }}
+            whileInView={{
+              opacity: 1,
+              y: "0",
+            }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className='grid grid-cols-4 gap-4 py-4'>
             <Tech Title='TypeScript' Description='Type-safe JavaScript' ImagePath='./techstack/typescript.svg' backgroundColor='1a406c' />
             <Tech Title='Node JS' Description='JavaScript runtime' ImagePath='./techstack/nodejs.svg' backgroundColor='315e2f' />
             <Tech Title='Express Js' Description='Web framework for Node.js' ImagePath='./techstack/expressjs.svg' backgroundColor='4c4c4c' />
@@ -84,7 +130,7 @@ function App() {
             <Tech Title='Python' Description='General-purpose language' ImagePath='./techstack/python.svg' backgroundColor='1b5381' />
             <Tech Title='C++' Description='High-performance language' ImagePath='./techstack/cpp.svg' backgroundColor='1a406c' />
             <Tech Title='Docker' Description='Container platform' ImagePath='./techstack/docker.svg' backgroundColor='1a406c' />
-          </div>
+          </motion.div>
         </div>
         <div className="h-full w-full rounded-md bg-neutral-950 relative flex flex-col antialiased border-2 border-white/10 my-10">
           <div className='w-full border-b-2 border-white/10 text-white p-12 font-bold z-10 flex flex-col gap-12 pb-20'>
