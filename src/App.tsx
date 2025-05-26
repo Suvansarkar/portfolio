@@ -49,7 +49,7 @@ function App() {
                   <div className="button__drow2"></div>
                 </a>
               </div>
-              <a href='/Suvan2025.pdf' download="SuvanSarkar_CV.pdf">
+              <a href='/portfolio/Suvan2025.pdf' download="SuvanSarkar_CV.pdf">
                 <div className='text-white flex gap-3 text-base lg:text-xl items-center cursor-pointer hover:text-gray-300 transition-all duration-300'>
                   <Download className='text-[#3b82f6]' />
                   <span className='text-nowrap'> Download CV</span>
