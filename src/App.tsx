@@ -3,7 +3,7 @@ import './App.css';
 import Tech from './components/Tech';
 import { BackgroundBeams } from './components/Beams';
 import { useEffect, useState } from 'react';
-import { delay, motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 function App() {
   const [isMobileView, setIsMobileView] = useState(false);
