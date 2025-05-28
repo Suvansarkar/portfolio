@@ -109,12 +109,11 @@ function App() {
               <Tech Title='Next JS' Description='React framework for SSR' ImagePath='./techstack/nextjs.svg' backgroundColor='656565' />
               <Tech Title='Svelte' Description='Compiled frontend framework' ImagePath='./techstack/svelte.svg' backgroundColor='bf5827' />
               <Tech Title='Nest JS' Description='Progressive Node.js framework' ImagePath='./techstack/nestjs.svg' backgroundColor='693248' />
-              {/* Additional tech items that will be shown when "View More" is clicked */}
               <motion.div
                 // transition={{ duration: 0.5 }}
                 initial={{ opacity: 0, height: 0 }}
                 animate={{ opacity: showMore ? 1 : 0, height: showMore ? 'auto' : 0 }}
-                className={`grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 col-span-4 gap-4`}
+                className={`grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 md:col-span-2 lg:col-span-3 xl:col-span-4 gap-4`}
               >
                 <Tech Title='Git' Description='Version control system' ImagePath='./techstack/git.svg' backgroundColor='4e2e27' />
                 <Tech Title='Mongo DB' Description='NoSQL document database' ImagePath='./techstack/mongodb.svg' backgroundColor='36482b' />
